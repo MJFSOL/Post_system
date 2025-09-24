@@ -1,6 +1,8 @@
 import { createApp, h, provide } from 'vue'
 import App from './App.vue'
 import Router from './config/route.js'
+import './styles/navbar.css'
+import './styles/style.css'
 import { DefaultApolloClient } from '@vue/apollo-composable'
 import { apolloClient } from './apollo/apollo-client'  // make sure this exists
 
