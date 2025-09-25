@@ -4,6 +4,10 @@ class BackendSchema < GraphQL::Schema
   mutation(Types::MutationType)
   query(Types::QueryType)
 
+  # use GraphQL::Execution::Interpreter
+  # use GraphQL::Analysis::AST
+  # use GraphQL::Execution::Errors
+
   # For batch-loading (see https://graphql-ruby.org/dataloader/overview.html)
   use GraphQL::Dataloader
 
@@ -18,9 +22,6 @@ class BackendSchema < GraphQL::Schema
 
   # Union and Interface Resolution
   def self.resolve_type(abstract_type, obj, ctx)
-    # TODO: Implement this method
-    # to return the correct GraphQL object type for `obj`
-    raise(GraphQL::RequiredImplementationMissingError)
   end
 
   # Limit the size of incoming queries:

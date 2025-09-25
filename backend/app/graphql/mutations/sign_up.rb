@@ -1,3 +1,4 @@
+require_relative '../types/user_type'
 module Mutations
   class SignUp < BaseMutation
     argument :name, String, required: true

@@ -1,0 +1,20 @@
+.productManager-container {
+  margin-left: 220px; /* same as sidebar width */
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: #f0f1f5;
+}
+
+.PM-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.addProd-container{
+    background-color: white;
+    height: 20rem;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}

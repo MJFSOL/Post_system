@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
+  # mount GraphqlPlayground::Rails::Engine, at: "/playground", graphql_path: "/graphql"
   post "/graphql", to: "graphql#execute"
+  # Rails.application.routes.default_url_options[:host] = "http://localhost:3000"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
